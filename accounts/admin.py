@@ -10,5 +10,5 @@ class CustomUserAdmin(UserAdmin):
     model = CustomUser
     add_form = CustomChangeForm
     FORM = CustomCreationsForm
-    list_display = ('email')
+    list_display = ('email',)
 

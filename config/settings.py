@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'crispy_forms',
+    'rosetta',
     
     #My Apps 
     'accounts.apps.AccountsConfig',
@@ -65,7 +67,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [str(BASE_DIR.joinpath('templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -138,12 +140,21 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# locale
 
-TIME_ZONE = 'UTC'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fa'
 
-USE_I18N = True
+LANGUAGES = (
+    ('en', 'English'),
+    ('fa', 'Persian'),
+)
 
+# TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tehran'
+
+USE_I18N = True     # Internationalization
+USE_L10N = True     # Localization
 USE_TZ = True
 
 
@@ -165,3 +176,33 @@ LOGIN_REDIRECT_URL = 'home_page'
 
 LOGOUT_REDIRECT_URL = 'home_page'
 
+# for send a confirmation to console
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# # for send a confirmation from our email to user email
+
+# EMAIL_PACKED = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "smtp.gmail.com"
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "mr3fake@gmail.com"
+# EMAIL_HOST_PASSWORD = "roozbehbadali1381"
+
+# Crispy Forms Template
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# allauth config  
+
+ACCOUNT_SESSION_REMEMBER = True  
+
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
+
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+ACCOUNT_USERNAME_REQUIRED = False
+
+ACCOUNT_EMAIL_REQUIRED = True
+
+ACCOUNT_UNIQUE_EMAIL = True

@@ -1,0 +1,23 @@
+{% extends '_base.html' %}
+
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block page_title %}
+  
+    {% trans 'Log Out' %}
+
+{% endblock %}
+
+{% block content %}
+
+    <h1>{% trans 'Log Out' %}</h1>
+
+    <h3>{% trans 'are you sure you want to log out?' %}</h3>
+
+    <form class="" method="post">
+        {% csrf_token %}
+        <input type="submit" value="{% trans 'Log Out' %}" />
+    </form>
+
+{% endblock %}

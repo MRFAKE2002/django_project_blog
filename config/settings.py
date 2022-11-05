@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     
     #My Apps 
     'accounts.apps.AccountsConfig',
+    'pages.apps.PagesConfig',
     
 ]
 

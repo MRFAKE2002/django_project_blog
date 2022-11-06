@@ -1,0 +1,19 @@
+{% extends '_base.html' %}  
+
+{% load i18n %}
+
+{% block title %}
+    
+    {% trans "Post Details" %}
+
+{% endblock %}
+
+{% block content %}
+
+    <h1> {% trans "Post Details" %} </h1>
+
+    {{ post.title }}
+    {{ post.author }}
+    {{ post.text }}
+
+{% endblock %}

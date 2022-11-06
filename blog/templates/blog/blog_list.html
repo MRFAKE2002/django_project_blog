@@ -1,0 +1,19 @@
+{% extends '_base.html' %}  
+
+{% load i18n %}
+
+{% block title %}
+    
+    {% trans "Posts List" %}
+
+{% endblock %}
+
+{% block content %}
+
+    <h1> {% trans "Posts List" %} </h1>
+
+    {% for post in posts %}
+        {{ post.title }}
+    {% endfor %}
+
+{% endblock %}

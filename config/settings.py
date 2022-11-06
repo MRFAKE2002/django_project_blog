@@ -40,17 +40,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     #Third Party 
+    'crispy_forms',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-    'crispy_forms',
     'rosetta',
     
     #My Apps 
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
-    'blog.apps.BlogConfig',
+    'Blog.apps.BlogConfig',
     
 ]
 

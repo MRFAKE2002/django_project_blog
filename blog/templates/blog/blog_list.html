@@ -10,10 +10,41 @@
 
 {% block content %}
 
-    <h1> {% trans "Posts List" %} </h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-9">
+                {% for post in posts %}
+                    <div class="card shadow-sm my-3">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted small py-2">{{ post.author }}</h6>
+                            <p class="card-text py-3">
+                                {{ post.text|truncatewords:5 }}
+                            </p>
+                            <a href="{{ post.get_absolute_url }}" class="btn btn-sm btn-success">{% trans "Read More" %}</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
-    {% for post in posts %}
-        {{ post.title }}
-    {% endfor %}
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt_3">
+            {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.previous_page_number}}">Previous</a>
+                </li>
+            {% endif %}
+            <li class="page-item">
+                <a class="page-link" href="#">1</a>
+            </li>
+            {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.next_page_number}}">Next</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
 
 {% endblock %}

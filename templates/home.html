@@ -1,1 +1,23 @@
-<h1> Home Page </h1>
+{% extends "_base.html" %}
+
+{% load i18n %}
+
+{% block title %}
+
+    {% trans "Home" %}
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container-fluid bg-info">
+        <div class="row py-3">
+            <div class="col-md-8 col-md-10 mx-auto">
+                <h3 class="my-4 mt-3 text-white">{% trans "Welcome to your Blog" %}</h3>
+                <h3 class="text-light"><a href="{% url "blog_create" %}">{% trans "for make your own post click here" %}</a></h3>
+                <h3 class="text-light"><a href="{% url "blog_list" %}">{% trans "for see others posts click here" %}</a></h3>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

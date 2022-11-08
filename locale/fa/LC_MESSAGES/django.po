@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-05 09:32+0330\n"
+"POT-Creation-Date: 2022-11-08 14:29+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,70 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: .\templates\account\email_confirm.html:6
+#: .\templates\account\email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: .\templates\account\email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: .\templates\account\email_confirm.html:20
+msgid "Confirm"
+msgstr ""
+
+#: .\templates\account\email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: .\templates\account\login.html:8 .\templates\account\login.html:14
+#: .\templates\account\login.html:19 .\templates\top_header.html:23
+msgid "Log In"
+msgstr ""
+
+#: .\templates\account\logout.html:8 .\templates\account\logout.html:14
+#: .\templates\account\logout.html:20 .\templates\top_header.html:19
+msgid "Log Out"
+msgstr ""
+
+#: .\templates\account\logout.html:16
+msgid "are you sure you want to log out?"
+msgstr ""
+
 #: .\templates\account\signup.html:9 .\templates\account\signup.html:15
-#: .\templates\account\signup.html:20
+#: .\templates\account\signup.html:20 .\templates\top_header.html:25
 msgid "Sign Up"
+msgstr ""
+
+#: .\templates\home.html:7 .\templates\top_header.html:11
+msgid "Home"
+msgstr ""
+
+#: .\templates\home.html:16
+msgid "Welcome to your Blog"
+msgstr ""
+
+#: .\templates\home.html:17
+msgid "for make your own post click here"
+msgstr ""
+
+#: .\templates\home.html:18
+msgid "for see others posts click here"
+msgstr ""
+
+#: .\templates\top_header.html:12
+msgid "Add post"
+msgstr ""
+
+#: .\templates\top_header.html:17
+msgid "Welcome"
 msgstr ""
 
 #: .\venv\Lib\site-packages\crispy_forms\tests\test_form_helper.py:130

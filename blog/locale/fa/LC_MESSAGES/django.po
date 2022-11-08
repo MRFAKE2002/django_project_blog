@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-08 14:03+0330\n"
+"PO-Revision-Date: 2022-11-08 09:12+0330\n"
+"Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\Blog\models.py:14
+msgid "Title"
+msgstr "موضوع"
+
+#: .\Blog\models.py:15
+msgid "description"
+msgstr "توضیح"
+
+#: .\Blog\models.py:16
+msgid "Status"
+msgstr "وضعیت"
+
+#: .\Blog\models.py:19
+msgid "date_time_created"
+msgstr "تاریخ اصلاح"
+
+#: .\Blog\templates\blog\blog_create.html:8
+msgid "Post Create"
+msgstr "ساخت پست"
+
+#: .\Blog\templates\blog\blog_create.html:18
+msgid "Add new Post:"
+msgstr ""
+
+#: .\Blog\templates\blog\blog_create.html:21
+msgid "Enter post title"
+msgstr ""
+
+#: .\Blog\templates\blog\blog_create.html:22
+#, fuzzy
+#| msgid "Title"
+msgid "Some Title"
+msgstr "موضوع"
+
+#: .\Blog\templates\blog\blog_create.html:25
+msgid "Enter post text:"
+msgstr ""
+
+#: .\Blog\templates\blog\blog_create.html:26
+msgid "Enter your post text here..."
+msgstr ""
+
+#: .\Blog\templates\blog\blog_create.html:28
+msgid "Submit"
+msgstr ""
+
+#: .\Blog\templates\blog\blog_delete.html:8
+msgid "Delete Post"
+msgstr "حذف پست"
+
+#: .\Blog\templates\blog\blog_delete.html:17
+msgid "Are you sure?"
+msgstr "مطمئنی؟"
+
+#: .\Blog\templates\blog\blog_delete.html:18
+msgid "Do you want to delete post?"
+msgstr "آیا شما میخواهید این  پست را حذف کنید؟"
+
+#: .\Blog\templates\blog\blog_detail.html:7
+msgid "Post Details"
+msgstr "جزییات پست"
+
+#: .\Blog\templates\blog\blog_detail.html:18
+msgid "author:"
+msgstr ""
+
+#: .\Blog\templates\blog\blog_list.html:7
+msgid "Posts List"
+msgstr "لیست پست ها "
+
+#: .\Blog\templates\blog\blog_list.html:24
+msgid "Read More"
+msgstr ""

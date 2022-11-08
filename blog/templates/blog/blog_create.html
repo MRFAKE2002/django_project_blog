@@ -1,0 +1,35 @@
+{% extends '_base.html' %}
+
+{% load i18n %}
+{% load  crispy_forms_tags %}
+
+{% block title %}
+
+    {% trans "Post Create"%}
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-9">
+                <div class="card shadow my-3 p-5">
+                    <h3>{% trans "Add new Post:" %}</h3>
+                    <form method="POST">
+                        <div class="form-group py-2">
+                            <label class="py-1">{% trans "Enter post title" %}</label>
+                            <input type="text" class="form-control" placeholder="{% trans "Some Title" %}" name="title">
+                        </div>
+                        <div class="form-group py-2">
+                            <label class="py-1">{% trans "Enter post text:" %}</label>
+                            <textarea class="form-control" name="text" rows="8" placeholder="{% trans "Enter your post text here..." %}"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% load i18n %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="{% url 'home_page' %}">{% trans "Home" %}</a>
+                <a class="nav-link" href="{% url 'blog_create' %}">{% trans "Add post" %}</a>
+            </div>
+        </div>
+        {% if user.is_authenticated %}
+            <p>
+                <h5 class="navbar-brand">{% trans "Welcome" %} {{ user.username }}</h5>
+                |
+                <a class="navbar-brand" href="{% url 'account_logout' %}">{% trans "Log Out" %}</a>
+            </p>
+        {% else %}
+            <p>
+                <a class="navbar-brand" href="{% url 'account_login' %}">{% trans "Log In" %}</a>
+                |
+                <a class="navbar-brand" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
+            </p>
+        {% endif %}
+    </div>
+</nav>
+

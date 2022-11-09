@@ -11,6 +11,7 @@ class Blog(models.Model):
         ('drf', 'Draft'),
     )
     
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='post_user')
     title = models.CharField(_('Title'), max_length=50,)
     text = models.TextField(_('description'))
     status = models.CharField(_('Status'), choices=STATUS_CHOICES,  max_length=3)

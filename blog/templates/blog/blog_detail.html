@@ -17,8 +17,14 @@
                     <h1>{{ post.title }}</h1>
                     <p class="small text-muted mt-2">{% trans "author:" %} {{ post.author }}</p>
                     <p class="mt-2">{{ post.text }}</p>
+                    <p>
+                        {% if post.user == user %}
+                            <a href="{% url "blog_update" post.id %}" class="btn btn-warning">{% trans "Edit" %}</a> 
+                            <a href="{% url "blog_delete" post.id %}" class="btn btn-danger">{% trans "Delete" %}</a>
+                        {% endif %}
+                    </p> 
                 </div>
-            
+                
                 <div class="card shadow my-3 p-5">
                     <h3>Comments:</h3>
                         No comments yet! Be the first one.

@@ -5,7 +5,7 @@
 
 {% block title %}
 
-    {% trans "Post Create"%}
+    {% trans "Post Edit" %}
 
 {% endblock %}
 
@@ -17,7 +17,6 @@
                 <div class="card shadow my-3 p-5">
                     <h3>{% trans "Add new Post:" %}</h3>
                     <form method="POST">
-                        {% csrf_token %}
                         {{ form|crispy }}
                         {% comment %} <div class="form-group py-2">
                             <label class="py-1">{% trans "Enter post title" %}</label>

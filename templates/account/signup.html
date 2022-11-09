@@ -1,23 +1,63 @@
 {% extends '_base.html' %}
 
-
 {% load crispy_forms_tags %}
 {% load i18n %}
 
 {% block title %}
-
+  
     {% trans 'Sign Up' %}
 
 {% endblock %}
 
 {% block content %}
 
-    <h1> {% trans 'Sign Up' %} </h1>
+<body class="img js-fullheight" >
+    <div class="d-flex justify-content-center mt-5" dir="rtl">
+        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-xs-6 bg-white m-3 m-sm-5 border rounded px-4 pt-4 pb-3 shadow">
+            <section class="ftco-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="">
+                            <form method="POST" action="" class="">
+                                <h1 class="text-center">{% trans "Sign Up" %}</h1>
+                                {% csrf_token %}
+                                {{ form|crispy }}
+                                {% comment %} <div class="form-group">
+                                    <label for="emailAddress" class="m-2">{% trans "Email:" %}</label>
+                                    <input type="email" class="form-control" id="emailAddress" placeholder="example@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="m-2">{% trans "Password:" %} </label>
+                                    <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div> {% endcomment %}
+                                {% comment %} <div class="form-group d-md-flex">
+                                    <div class="text-decoration-none mt-2">
+                                        <a href="{% url "account_reset_password"%}" class="text-decoration-none">{% trans "Forgot Password" %}</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control submit px-3 btn btn-success mt-3 w-100">{% trans "Log In"%}</button>
+                                </div>
+                                <div class="w-100 text-center">
+                                    <span>
+                                        &mdash; {% trans "Or" %} &mdash;    
+                                    </span>
+                                </div> {% endcomment %}
+                                <a href="{% url 'account_signup' %}" class="btn btn-primary mt-2 mb-3 w-100">{% trans "Sign Up" %}</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
-    <form method="POST" class=>
-        {% csrf_token %}
-        {{ form|crispy }}
-        <button type="submit" class="btn btn-primary"> {% trans 'Sign Up' %}</button>
-    </form>
+</body>
 
 {% endblock %}

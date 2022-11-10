@@ -25,3 +25,20 @@ class Blog(models.Model):
     
     def get_absolute_url(self):
         return reverse('blog_detail', args=[self.pk])
+
+
+class PostComment(models.Model):
+    POSTS_STARS = [
+        ('1', _('very bad')),
+        ('2', _('bad')),
+        ('3', _('good')),
+        ('4', _('very good')),
+    ]
+    
+    post = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name='comments')
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='comments')
+    body = models.TextField(_('body'),)
+    stars = models.CharField(_("stars"), choices=POSTS_STARS, max_length=10)
+    
+    datetime_created = models.DateTimeField(_('datetime_created'), default=timezone.now)
+    datetime_modified = models.DateTimeField(auto_now=True)

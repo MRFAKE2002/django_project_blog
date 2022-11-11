@@ -1,6 +1,7 @@
 {% extends '_base.html' %}  
 
 {% load i18n %}
+{% load crispy_forms_tags %}
 
 {% block title %}
     
@@ -29,8 +30,8 @@
                     <h3>{% trans "Comments:" %}</h3>
                         {% if post.comments.all %}
                             {% for comment in post.comments.all %}
-                                {{ comment.author.username }}
-                                {{ comment.body }}
+                                <p> {{ comment.author.username }} </p>
+                                <p> {{ comment.body }} </p>
                             {% endfor %}
                         {% else %}
                             {% trans "No comments yet! Be the first one." %}
@@ -39,19 +40,23 @@
             
                 <div class="card shadow my-3 p-5">
                     <h3>{% trans "Add new comment:"%}</h3>
-                    <form method="POST">
-                        <div class="form-group py-2">
-                            <label class="py-1" for="author_name">{% trans "Enter your name:"%}</label>
-                            <input type="text" class="form-control" placeholder="e.g. John Doe" name="author_name">
-                        </div>
-                        <div class="form-group py-2">
-                            <label class="py-1" for="email">{% trans "Your Email"%}:</label>
-                            <input type="email" class="form-control" placeholder="example@gmail.com" name="email">
-                        </div>
-                        <div class="form-group py-2">
-                            <label class="py-1" for="comment_text">{% trans "Comment text"%}:</label>
-                            <textarea class="form-control" name="text" rows="3" placeholder="Enter your comment text here..."></textarea>
-                        </div>
+                    <form method="POST" action="{% url 'comment_create' post.id %}">
+                        {% csrf_token %}
+                        {{ comment_form|crispy }}
+                        {% comment %} 
+                            <div class="form-group py-2">
+                                <label class="py-1" for="author_name">{% trans "Enter your name:"%}</label>
+                                <input type="text" class="form-control" placeholder="e.g. John Doe" name="author_name">
+                            </div>
+                            <div class="form-group py-2">
+                                <label class="py-1" for="email">{% trans "Your Email"%}:</label>
+                                <input type="email" class="form-control" placeholder="example@gmail.com" name="email">
+                            </div>
+                            <div class="form-group py-2">
+                                <label class="py-1" for="comment_text">{% trans "Comment text"%}:</label>
+                                <textarea class="form-control" name="text" rows="3" placeholder="Enter your comment text here..."></textarea>
+                            </div>
+                        {% endcomment %}
                         <button type="submit" class="btn btn-primary">{% trans "Submit"%}</button>
                     </form>
                 </div>

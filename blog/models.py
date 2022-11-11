@@ -42,3 +42,8 @@ class PostComment(models.Model):
     
     datetime_created = models.DateTimeField(_('datetime_created'), default=timezone.now)
     datetime_modified = models.DateTimeField(auto_now=True)
+    
+
+    def get_absolute_url(self):
+        return reverse('blog_detail', args=[self.post_id])
+    

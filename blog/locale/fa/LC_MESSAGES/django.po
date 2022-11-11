@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-09 20:49+0330\n"
+"POT-Creation-Date: 2022-11-11 19:40+0330\n"
 "PO-Revision-Date: 2022-11-09 20:51+0330\n"
 "Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,6 +35,36 @@ msgstr "وضعیت"
 msgid "date_time_created"
 msgstr "تاریخ ساخت"
 
+#: .\Blog\models.py:32
+msgid "very bad"
+msgstr ""
+
+#: .\Blog\models.py:33
+msgid "bad"
+msgstr ""
+
+#: .\Blog\models.py:34
+msgid "good"
+msgstr ""
+
+#: .\Blog\models.py:35
+msgid "very good"
+msgstr ""
+
+#: .\Blog\models.py:40
+msgid "body"
+msgstr ""
+
+#: .\Blog\models.py:41
+msgid "stars"
+msgstr ""
+
+#: .\Blog\models.py:43
+#, fuzzy
+#| msgid "date_time_created"
+msgid "datetime_created"
+msgstr "تاریخ ساخت"
+
 #: .\Blog\templates\blog\blog_create.html:8
 msgid "Post Create"
 msgstr "ساخت پست"
@@ -45,6 +75,7 @@ msgid "Add new Post:"
 msgstr "افزودن پست جدید:"
 
 #: .\Blog\templates\blog\blog_create.html:31
+#: .\Blog\templates\blog\blog_detail.html:61
 #: .\Blog\templates\blog\blog_update.html:30
 msgid "Submit"
 msgstr "ارسال"
@@ -61,22 +92,35 @@ msgstr "مطمئنی؟"
 msgid "Do you want to delete post?"
 msgstr "آیا شما میخواهید این  پست را حذف کنید؟"
 
-#: .\Blog\templates\blog\blog_detail.html:7
+#: .\Blog\templates\blog\blog_detail.html:8
 msgid "Post Details"
 msgstr "جزییات پست"
 
-#: .\Blog\templates\blog\blog_detail.html:18
+#: .\Blog\templates\blog\blog_detail.html:19
 msgid "author:"
 msgstr "نویسنده:"
 
-#: .\Blog\templates\blog\blog_detail.html:22
+#: .\Blog\templates\blog\blog_detail.html:23
 msgid "Edit"
 msgstr "ویرایش"
 
-#: .\Blog\templates\blog\blog_detail.html:23
-#| msgid "Delete Post"
+#: .\Blog\templates\blog\blog_detail.html:24
 msgid "Delete"
 msgstr "حذف "
+
+#: .\Blog\templates\blog\blog_detail.html:30
+msgid "Comments:"
+msgstr ""
+
+#: .\Blog\templates\blog\blog_detail.html:37
+msgid "No comments yet! Be the first one."
+msgstr ""
+
+#: .\Blog\templates\blog\blog_detail.html:42
+#, fuzzy
+#| msgid "Add new Post:"
+msgid "Add new comment:"
+msgstr "افزودن پست جدید:"
 
 #: .\Blog\templates\blog\blog_list.html:7
 msgid "Posts List"
@@ -87,7 +131,6 @@ msgid "Read More"
 msgstr "بیشتر"
 
 #: .\Blog\templates\blog\blog_update.html:8
-#| msgid "Posts List"
 msgid "Post Edit"
 msgstr "ویرایش پست"
 

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -159,6 +160,10 @@ USE_I18N = True     # Internationalization
 USE_L10N = True     # Localization
 USE_TZ = True
 
+PROJECT_PATH = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
+LOCALE_PATHS = (
+    os.path.join(PROJECT_PATH, "locale"),
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

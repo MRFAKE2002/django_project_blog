@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-11 19:40+0330\n"
-"PO-Revision-Date: 2022-11-09 20:51+0330\n"
+"POT-Creation-Date: 2022-11-15 11:38+0330\n"
+"PO-Revision-Date: 2022-11-15 11:41+0330\n"
 "Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: .\Blog\models.py:15
 msgid "Title"
-msgstr "موضوع"
+msgstr "عنوان"
 
 #: .\Blog\models.py:16
 msgid "description"
-msgstr "توضیح"
+msgstr "شرح"
 
 #: .\Blog\models.py:17
 msgid "Status"
@@ -33,37 +33,35 @@ msgstr "وضعیت"
 
 #: .\Blog\models.py:20
 msgid "date_time_created"
-msgstr "تاریخ ساخت"
+msgstr "زمان ساخت"
 
 #: .\Blog\models.py:32
 msgid "very bad"
-msgstr ""
+msgstr "خیلی بد"
 
 #: .\Blog\models.py:33
 msgid "bad"
-msgstr ""
+msgstr "بد"
 
 #: .\Blog\models.py:34
 msgid "good"
-msgstr ""
+msgstr "خوب"
 
 #: .\Blog\models.py:35
 msgid "very good"
-msgstr ""
+msgstr "خیلی خوب"
 
 #: .\Blog\models.py:40
 msgid "body"
-msgstr ""
+msgstr "بدنه"
 
 #: .\Blog\models.py:41
 msgid "stars"
-msgstr ""
+msgstr "امتیاز "
 
 #: .\Blog\models.py:43
-#, fuzzy
-#| msgid "date_time_created"
 msgid "datetime_created"
-msgstr "تاریخ ساخت"
+msgstr "زمان ساخت"
 
 #: .\Blog\templates\blog\blog_create.html:8
 msgid "Post Create"
@@ -90,11 +88,11 @@ msgstr "مطمئنی؟"
 
 #: .\Blog\templates\blog\blog_delete.html:18
 msgid "Do you want to delete post?"
-msgstr "آیا شما میخواهید این  پست را حذف کنید؟"
+msgstr "آیا می خواهید پست را حذف کنید؟"
 
 #: .\Blog\templates\blog\blog_detail.html:8
 msgid "Post Details"
-msgstr "جزییات پست"
+msgstr "جزئیات پستی"
 
 #: .\Blog\templates\blog\blog_detail.html:19
 msgid "author:"
@@ -102,46 +100,40 @@ msgstr "نویسنده:"
 
 #: .\Blog\templates\blog\blog_detail.html:23
 msgid "Edit"
-msgstr "ویرایش"
+msgstr "ویرایش "
 
 #: .\Blog\templates\blog\blog_detail.html:24
 msgid "Delete"
-msgstr "حذف "
+msgstr "حذف"
 
 #: .\Blog\templates\blog\blog_detail.html:30
 msgid "Comments:"
-msgstr ""
+msgstr "نظرات:"
 
 #: .\Blog\templates\blog\blog_detail.html:37
 msgid "No comments yet! Be the first one."
-msgstr ""
+msgstr "هنوز نظری وجود ندارد! اولین نفر باشید."
 
 #: .\Blog\templates\blog\blog_detail.html:42
-#, fuzzy
-#| msgid "Add new Post:"
 msgid "Add new comment:"
-msgstr "افزودن پست جدید:"
+msgstr "افزودن نظر جدید:"
 
 #: .\Blog\templates\blog\blog_list.html:7
 msgid "Posts List"
-msgstr "لیست پست ها "
+msgstr "لیست پست ها"
 
 #: .\Blog\templates\blog\blog_list.html:24
 msgid "Read More"
-msgstr "بیشتر"
+msgstr "ادامه مطلب"
+
+#: .\Blog\templates\blog\blog_list.html:36
+msgid "Previous"
+msgstr "قبلی"
+
+#: .\Blog\templates\blog\blog_list.html:44
+msgid "Next"
+msgstr "بعدی"
 
 #: .\Blog\templates\blog\blog_update.html:8
 msgid "Post Edit"
 msgstr "ویرایش پست"
-
-#~ msgid "Enter post title"
-#~ msgstr "موضوع پست:"
-
-#~ msgid "Some Title"
-#~ msgstr "موضوع"
-
-#~ msgid "Enter post text:"
-#~ msgstr "متن پست:"
-
-#~ msgid "Enter your post text here..."
-#~ msgstr "وارد کردن متن پست..."

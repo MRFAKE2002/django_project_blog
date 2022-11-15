@@ -16,13 +16,13 @@
             <p>
                 <h5 class="navbar-brand">{% trans "Welcome" %} {{ user.username }}</h5>
                 |
-                <a class="navbar-brand" href="{% url 'account_logout' %}">{% trans "logout" %}</a>
+                <a class="navbar-brand" href="{% url 'account_logout' %}">{% trans "log out" %}</a>
             </p>
         {% else %}
             <p>
-                <a class="navbar-brand" href="{% url 'account_login' %}">{% trans "Log In" %}</a>
+                <a class="navbar-brand" href="{% url 'account_login' %}">{% trans "log in" %}</a>
                 |
-                <a class="navbar-brand" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
+                <a class="navbar-brand" href="{% url 'account_signup' %}">{% trans "Sign up" %}</a>
             </p>
         {% endif %}
     </div>

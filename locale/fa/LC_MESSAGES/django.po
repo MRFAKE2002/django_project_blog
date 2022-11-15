@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-11 19:40+0330\n"
-"PO-Revision-Date: 2022-11-09 21:22+0330\n"
+"POT-Creation-Date: 2022-11-15 11:38+0330\n"
+"PO-Revision-Date: 2022-11-15 09:08+0330\n"
 "Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -43,40 +43,43 @@ msgid ""
 msgstr ""
 
 #: .\templates\account\login.html:8 .\templates\account\login.html:42
-#: .\templates\top_header.html:23
-msgid "Log In"
+msgid "Log in"
 msgstr "ورود"
 
 #: .\templates\account\login.html:22
 msgid "Have an account?"
-msgstr "حسابی داری؟"
+msgstr "حساب کاربری داری؟"
 
 #: .\templates\account\login.html:38
 msgid "Forgot Password"
 msgstr "فراموشی رمزعبور"
 
 #: .\templates\account\login.html:46
-msgid "Or"
+#: .\venv\Lib\site-packages\django\utils\text.py:252
+msgid "or"
 msgstr "یا"
 
-#: .\templates\account\login.html:49 .\templates\account\signup.html:8
-#: .\templates\account\signup.html:22 .\templates\account\signup.html:49
-#: .\templates\top_header.html:25
+#: .\templates\account\login.html:49
 msgid "Sign Up"
 msgstr "ثبت نام"
 
 #: .\templates\account\login.html:51
-msgid "Or Log In With"
+msgid "Or Log in With"
 msgstr "یا ورود با"
 
 #: .\templates\account\logout.html:8 .\templates\account\logout.html:14
-#: .\templates\account\logout.html:20
-msgid "Log Out"
+#: .\templates\account\logout.html:20 .\templates\top_header.html:19
+msgid "log out"
 msgstr "خروج"
 
 #: .\templates\account\logout.html:16
 msgid "are you sure you want to log out?"
-msgstr ""
+msgstr "آیا برای خارج شدن مطمئن هستید؟"
+
+#: .\templates\account\signup.html:8 .\templates\account\signup.html:22
+#: .\templates\account\signup.html:49 .\templates\top_header.html:25
+msgid "Sign up"
+msgstr "ثبت نام"
 
 #: .\templates\home.html:7 .\templates\top_header.html:11
 msgid "Home"
@@ -84,33 +87,33 @@ msgstr "خانه"
 
 #: .\templates\home.html:16
 msgid "Welcome to your Blog"
-msgstr "به وبلاگ خود خوش آمدید"
+msgstr "به وبلاگ خود خوش آمدی"
 
 #: .\templates\home.html:17
 msgid "for make your own post click here"
-msgstr "برای ساخت پست خود اینجا کلیک کنید"
+msgstr "برای ایجاد پست خود اینجا را کلیک کنید"
 
 #: .\templates\home.html:18
 msgid "for see others posts click here"
-msgstr "برای دیدن پست دیگران اینجا کلیک کنید"
+msgstr "برای دیدن پست های دیگر اینجا را کلیک کنید"
 
 #: .\templates\top_header.html:12
 msgid "Add post"
-msgstr "افزودن پست"
+msgstr "اضافه کردن پست"
 
 #: .\templates\top_header.html:17
 msgid "Welcome"
-msgstr "خوش آمدید"
+msgstr "خوش آمدی"
 
-#: .\templates\top_header.html:19
-msgid "logout"
-msgstr ""
+#: .\templates\top_header.html:23
+msgid "log in"
+msgstr "ورود"
 
 #: .\venv\Lib\site-packages\crispy_forms\tests\test_form_helper.py:130
 #: .\venv\Lib\site-packages\crispy_forms\tests\test_form_helper.py:140
 #: .\venv\Lib\site-packages\django\forms\fields.py:91
 msgid "This field is required."
-msgstr ""
+msgstr "این فیلد الزامی است."
 
 #: .\venv\Lib\site-packages\crispy_forms\tests\test_layout.py:392
 msgid "i18n text"
@@ -123,7 +126,7 @@ msgstr ""
 #: .\venv\Lib\site-packages\crispy_forms\tests\test_layout_objects.py:143
 #: .\venv\Lib\site-packages\django\core\validators.py:22
 msgid "Enter a valid value."
-msgstr ""
+msgstr "یک مقدار معتبر وارد کنید."
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
 msgid "Messages"
@@ -131,11 +134,11 @@ msgstr "پیام ها"
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
-msgstr ""
+msgstr "نقشه های وب سایت"
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr ""
+msgstr "فایل های استاتیک"
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
@@ -149,40 +152,41 @@ msgstr "..."
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:50
 msgid "That page number is not an integer"
-msgstr ""
+msgstr "آن شماره صفحه یک عدد صحیح نیست"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:52
 msgid "That page number is less than 1"
-msgstr ""
+msgstr "این شماره صفحه کمتر از 1 است"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:57
 msgid "That page contains no results"
-msgstr ""
+msgstr "آن صفحه هیچ نتیجه ای ندارد"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:104
 #: .\venv\Lib\site-packages\django\forms\fields.py:751
 msgid "Enter a valid URL."
-msgstr ""
+msgstr "یک URL معتبر وارد کنید."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:164
 msgid "Enter a valid integer."
-msgstr ""
+msgstr " عدد صحیح معتبر وارد کنید."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:175
 msgid "Enter a valid email address."
-msgstr ""
+msgstr "یک آدرس ایمیل معتبر وارد کنید."
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
 #: .\venv\Lib\site-packages\django\core\validators.py:256
 msgid ""
 "Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
-msgstr ""
+msgstr "یک \"Slug\" معتبر متشکل از حروف، اعداد، زیرخط یا خط فاصله وارد کنید."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:264
 msgid ""
 "Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
 "hyphens."
 msgstr ""
+"یک \"Slug\" معتبر متشکل از حروف یونیکد، اعداد، زیرخط یا خط تیره وارد کنید."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:276
 #: .\venv\Lib\site-packages\django\core\validators.py:284
@@ -250,7 +254,7 @@ msgstr[1] ""
 #: .\venv\Lib\site-packages\django\forms\fields.py:347
 #: .\venv\Lib\site-packages\django\forms\fields.py:386
 msgid "Enter a number."
-msgstr ""
+msgstr "یک عدد وارد کنید"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:460
 #, python-format
@@ -284,12 +288,12 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:600
 msgid "Null characters are not allowed."
-msgstr ""
+msgstr "کاراکترهای پوچ مجاز نیستند."
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1401
 #: .\venv\Lib\site-packages\django\forms\models.py:899
 msgid "and"
-msgstr ""
+msgstr "و"
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1403
 #, python-format
@@ -308,11 +312,11 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
 msgid "This field cannot be null."
-msgstr ""
+msgstr "این فیلد نمی تواند خالی باشد."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
 msgid "This field cannot be blank."
-msgstr ""
+msgstr "این فیلد نمی تواند خالی باشد."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:132
 #, python-format
@@ -414,7 +418,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1810
 msgid "Email address"
-msgstr ""
+msgstr "آدرس ایمیل"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1835
 msgid "File path"
@@ -483,7 +487,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2334
 msgid "Text"
-msgstr ""
+msgstr "متن"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2409
 #, python-format
@@ -501,7 +505,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2417
 msgid "Time"
-msgstr ""
+msgstr "زمان"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2525
 msgid "URL"
@@ -686,11 +690,11 @@ msgstr[1] ""
 #: .\venv\Lib\site-packages\django\forms\formsets.py:483
 #: .\venv\Lib\site-packages\django\forms\formsets.py:490
 msgid "Order"
-msgstr ""
+msgstr "سفارش"
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:496
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: .\venv\Lib\site-packages\django\forms\models.py:892
 #, python-format
@@ -735,7 +739,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:439
 msgid "Clear"
-msgstr ""
+msgstr "پاک کردن"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:440
 msgid "Currently"
@@ -751,11 +755,11 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:771
 msgid "Yes"
-msgstr ""
+msgstr "بله"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:772
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #. Translators: Please do not add spaces around commas.
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:853
@@ -813,39 +817,39 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:155
 msgid "midnight"
-msgstr ""
+msgstr "نیمه شب"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:157
 msgid "noon"
-msgstr ""
+msgstr "ظهر"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:7
 msgid "Monday"
-msgstr ""
+msgstr "دوشنبه"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:8
 msgid "Tuesday"
-msgstr ""
+msgstr "سه شنبه"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:9
 msgid "Wednesday"
-msgstr ""
+msgstr "چهار شنبه"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Thursday"
-msgstr ""
+msgstr "پنج شنبه"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:11
 msgid "Friday"
-msgstr ""
+msgstr "جمعه"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:12
 msgid "Saturday"
-msgstr ""
+msgstr "شنبه"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:13
 msgid "Sunday"
-msgstr ""
+msgstr "یکشنبه"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:16
 msgid "Mon"
@@ -1101,10 +1105,6 @@ msgctxt "String to return when truncating text"
 msgid "%(truncated_text)s…"
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\utils\text.py:252
-msgid "or"
-msgstr ""
-
 #. Translators: This string is used as a separator between list elements
 #: .\venv\Lib\site-packages\django\utils\text.py:271
 #: .\venv\Lib\site-packages\django\utils\timesince.py:94
@@ -1298,7 +1298,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
 msgid "Django Documentation"
-msgstr ""
+msgstr "مستندات جنگو"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
 msgid "Topics, references, &amp; how-to’s"
@@ -1319,9 +1319,3 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""
-
-#~ msgid "Email:"
-#~ msgstr "ایمیل:"
-
-#~ msgid "Password:"
-#~ msgstr "رمزعبور:"

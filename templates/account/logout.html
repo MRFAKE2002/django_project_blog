@@ -5,19 +5,19 @@
 
 {% block page_title %}
   
-    {% trans 'Log Out' %}
+    {% trans 'log out' %}
 
 {% endblock %}
 
 {% block content %}
 
-    <h1>{% trans 'Log Out' %}</h1>
+    <h1>{% trans 'log out' %}</h1>
 
     <h3>{% trans 'are you sure you want to log out?' %}</h3>
 
     <form class="" method="post">
         {% csrf_token %}
-        <input type="submit" value="{% trans 'Log Out' %}" />
+        <input type="submit" value="{% trans 'log out' %}" />
     </form>
 
 {% endblock %}
